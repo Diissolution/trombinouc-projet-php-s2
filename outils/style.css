@@ -1,0 +1,634 @@
+/* ===================================== Menu de navigation ==================================  */
+  .sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed; /* Ne bouge pas au scroll */
+    z-index: 1; /* Reste au top */
+    top: 0;
+    left: 0; 
+    background-color: rgb(16, 57, 134);
+    overflow-x: hidden; /* Désactiver scroll dans le menu */
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    color:whitesmoke;
+  }
+
+  /* Liens menu */
+  .sidenav a {
+    padding: 6px 5px;
+    text-align:center;
+    text-decoration: none;
+    font-size: 18px;
+    color: #f1f1f1;
+    display: block;
+    margin: 2% 0;
+    border-bottom:1.5px solid whitesmoke;
+    background-color: rgb(16, 57, 134);
+  }
+  .sidenav a i{
+    float:left;
+
+  }
+
+  .sidenav a:visited {
+    color:#f1f1f1;
+  }
+  
+  /* Souris au dessus liens menu */
+  .sidenav a:hover {
+    color: rgb(16, 57, 134);
+    background-color: #f1f1f1;
+    -webkit-transition:background-color 0.8s, color 0.8s;;
+    transition: background-color 0.8s, color 0.8s;
+  }
+
+  .sidenav .logmenu {
+    margin-top:25px;
+    color: whitesmoke;
+    text-align:center;
+    margin-bottom:20px;
+  }
+
+  .sidenav .nologmenu{
+    margin: 10px 5px;
+    border:2px solid whitesmoke;
+    border-radius:10px;
+    padding: 3px;
+    color:rgb(16, 57, 134);
+    background:whitesmoke;
+  }
+  
+  a.titre{
+  color:#f1f1f1;
+  font-size:25px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  text-align:center;
+  border:none;
+  margin:0 0;
+  }
+  
+  .sidenav .ami_req{
+	text-align:center;
+	margin:5px 2px;
+	border-bottom:none;
+  }
+  
+  .sidenav .ami_req a{
+  border-bottom:none;
+  }
+  
+	.flash{
+	animation: blinker 5s linear infinite;
+	}
+
+/* Element qui clignote */
+
+	@keyframes blinker {
+	50% {
+		background-color:#d8d8d8;
+		color:rgb(16, 57, 134);
+	}
+	}
+	
+	
+
+  
+
+  /* ===================================== Header ======================================  */
+  header {
+    color:#f1f1f1;
+    background-color:rgb(16, 57, 134);
+    margin-left:160px;
+    font-size:32px;
+    font-family: 'Raleway', sans-serif;
+    text-align:left;
+    padding:10px 0 10px 0;
+  }
+ header span {
+    padding: 0.5% 0px;
+ }
+
+ 
+ 
+ 
+ /* =========================================== Contenu =========================================  */
+  
+ 
+  body{
+    margin:0;
+    background-color:#e0e0e0;
+  }
+
+
+  main {
+    margin: 10px 10px 20px 170px;
+    font-family: 'Roboto', sans-serif;
+    display: flow-root;
+  }
+
+  main section {
+    border:2px solid rgb(16, 57, 134);
+    border-radius: 20px;
+    padding:5px;
+    background-color:#f1f1f1;
+    display: flow-root;
+    margin:10px;
+  }
+
+  div {
+    margin:5px;
+  }
+
+  h2 {
+    color:rgb(16, 57, 134);
+    border: 1.5px solid rgb(32, 79, 167);
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin: 10px 5px;
+    display:inline-block;
+  }
+  
+  
+
+  /* Liens ------------------------------------------------------------ */
+  
+
+  /* survol du lien */
+  a:hover {
+    color: #ebc640;
+  }
+  
+  /* lien sélectionné */
+  a:active {
+    color: rgb(39, 106, 231);
+  }
+  
+  .listamis a{
+	color:rgb(16, 57, 134);
+  }
+  
+  /* Bouttons  ---------------------------------------------------------------*/
+
+  .buttonimpyellow {
+    color: #ebc640;
+    background: inherit;
+    padding: 10px;
+    border: 4px solid #ebc640;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: bold;
+  }
+
+
+  .buttonimpyellow:hover {
+    color: whitesmoke;
+    background: #ebc640;
+    border-color:  #ebc640;
+    -webkit-transition:all 0.5s;
+    transition: all 0.5s;
+  }
+
+  .buttonimp {
+    color:rgb(16, 57, 134);
+    background: inherit;
+    padding: 10px;
+    border: 4px solid rgb(16, 57, 134);
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: bold;
+  }
+  
+  .green{color:#00BF53;border: 4px solid #00BF53;}
+  .stronggreen{color:#008000;border: 4px solid #008000;}
+  .red{color:#E06C6D;border: 4px solid #E06C6D;}
+  
+  .buttonimp:hover {
+        color: whitesmoke;
+        background: rgb(16, 57, 134);
+        border-color:  rgb(16, 57, 134);
+        -webkit-transition:all 0.5s;
+        transition: all 0.5s;
+  }
+  
+  section div{
+	margin:0px 15px;
+  }
+
+  /* Formulaires  ---------------------------------------------------------------*/
+  
+  
+  form input[type=text],[type=password],[type=date]{
+    padding: 9px 16px;
+    margin: 8px;
+    border: none;
+    border-bottom: 2px solid rgb(16, 57, 134);
+    background:inherit;
+    width:50%;
+    text-align:left;
+  }
+
+  form textarea{
+    padding: 9px 16px;
+    border: none;
+    border-bottom: 2px solid rgb(16, 57, 134);
+    background:inherit;
+    width:50%;
+    text-align:left;
+    resize: none
+  }
+
+  form input[type=date]{
+    padding: 9px 16px;
+    margin: 8px;
+    border: none;
+    border: 2px solid rgb(16, 57, 134);
+    background:inherit;
+    width:50%;
+    text-align:center;
+    font-size:14px;
+    color:rgb(16, 57, 134);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  form label {
+    display: inline-block;
+    width: 100px;
+    margin-right: 5px;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .loginformcont{
+    padding: 10px;
+    border-radius:15px;
+    text-align: center;
+    border: 1.5px solid rgb(16, 57, 134);
+  }
+
+  .signupform{
+    padding: 10px;
+    border-radius:15px;
+    text-align: center;
+    border: 1.5px solid #ebc640;
+  }
+
+  .publiform{
+    padding: 10px;
+    border-radius:15px;
+    text-align: left;
+  }
+
+  .searchbar{
+    margin-left:10px;
+    width:25%;
+  }
+  
+  .mdpform{
+  width: 50%;
+  clear: both;
+  margin-top:50px;
+  }
+  
+  .mdpform input{
+  clear: both;
+  }
+  
+  .mailform{
+  width: 50%;
+  clear: both;
+  }
+  
+  .mailform input{
+  clear: both;
+  }
+
+  /* Spécifications  ---------------------------------------------------------------*/
+  
+  
+  .title{
+    text-align:center;
+  }
+  
+  div.title h2{
+  background:#f1f1f1;
+  }
+  
+  section.alertbox,section.infobox{
+    border: 1.5px solid #f1f1f1;
+  }
+
+  .littlemargin{
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+
+  strong{
+    color:#111E6C;
+    font-weight: bold;
+  }
+
+  .float{
+    float:left;
+    width:45%;
+    margin:15px;
+  }
+
+  .clear{
+    clear:left;
+    width:45%;
+    margin:15px;
+  }
+  .float90{
+    float:left;
+    width:90%;
+    margin:15px;
+  }
+
+  .clear30{
+    clear:left;
+    width:25%;
+    margin:10px;
+  }
+
+  .float30{
+    float:left;
+    width:30%;
+    margin:10px;
+  }
+  
+  .hidden{
+    visibility: hidden;
+  }
+
+  /* Box ---------------------------------------------------------------*/
+  
+  
+  .yellowbox{
+    background-color:#ebc640;
+    padding:15px;
+    font-size:19px;
+  }
+
+  .bluebox{
+    background-color: rgb(16, 57, 134);
+    padding:15px;
+    font-size:19px;
+  }
+  .alertbox{
+    background-color:rgb(180, 87, 70);
+    padding:15px;
+    font-size:19px;
+    color:whitesmoke;
+    width:auto;
+  }
+
+  .alertbox strong{
+    color:whitesmoke;
+    font-weight: bold;
+    font-size:15px;
+  }
+
+  .infobox{
+    background-color:rgb(63, 138, 63);
+    padding:15px 0 15px 15px;
+    font-size:19px;
+    color:whitesmoke;
+    width:auto;
+  }
+
+  .infobox strong {
+    color:whitesmoke;
+    font-weight: bold;
+    font-size:15px;
+  }
+
+  /* Publications --------------------------------------------------------------- */
+  
+  
+  .full_publication{
+    border-top: 1.5px solid rgba(45, 86, 161);
+    border-bottom: 1.5px solid rgba(45, 86, 161);
+    transition:0.3s;
+    overflow: hidden;
+    margin: 15px 5px;
+    position:relative;
+  }
+  .publication{
+    border:0;
+    width:80%;
+    margin:10px 0;
+    padding-bottom:5px;
+    float:left;
+    position:relative;
+  }
+
+  .full_publication:hover{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+
+  .publication_profil {
+    border:0;
+    width:12%;
+    margin:10px 0;
+    padding-bottom:5px;
+    float:left;
+    text-align:center;
+  }
+  
+  .publication_profil img{
+     width: 70%;
+   }
+
+/* Reponses --------------------------------------------------------------- */
+
+	.full_rep{
+	border-left: 1.5px solid rgba(45, 86, 161);
+	border-bottom: 1.5px solid rgba(45, 86, 161);
+    transition:0.3s;
+    overflow: hidden;
+    margin: 0 5px 0 15%;
+    position:relative;
+	}
+	
+	.rep_profil{
+	border:0;
+    width:15%;
+    margin:5px 0;
+    padding-bottom:5px;
+    float:left;
+	font-size:13px;
+	}
+	
+	.reponse{
+	border:0;
+    width:80%;
+    margin:10px 0;
+    padding-bottom:5px;
+    float:left;
+    position:relative;
+    font-size:14px;
+	}
+
+  
+ /* Annuaire ---------------------------------------------------------------*/
+
+  .annuaire a{
+    text-decoration: none;
+  }
+
+ 
+  .profilcard{
+    border: 1.5px solid rgba(45, 86, 161);
+    border-radius: 20px;
+    padding: 10px;
+    text-align:center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+
+  .profilcard:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .profilcard .nom {
+    margin:4px;
+    font-weight: bold;
+    font-size:16px;
+  }
+
+  .profil{
+    border:2px solid rgba(45, 86, 161);
+    border-radius:30px;
+    padding:10px;
+  }
+  
+
+
+  /* ================================ Footer ==============================  */
+  footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(16, 57, 134);
+  color: white;
+  text-align: right;
+  font-size:15px;
+  }
+  
+  footer span {
+    padding: 8px 10px 8px 0px;
+  }
+
+  /* ---------------------------------===========  Responsive =========== ----------------------------------------- */
+
+  @media screen and (max-width: 600px) {
+    .sidenav {
+      width: 100%;
+      height: auto;
+      position: relative;
+      padding-top:0;
+    }
+    .sidenav a {
+      height: auto;
+      position: top;
+      float:left;
+    }
+    .sidenav a i {
+      display:none;
+    }
+    main{
+      margin-left:0;
+    }
+    .publiform{
+      width:160%;
+      border-radius:15px;
+      text-align: left;
+    }
+    .searchbar{
+      width:auto;
+    }
+    header{
+      margin-left:0;
+    }
+
+    .sidenav .logmenu {
+      color: whitesmoke;
+      text-align:left;
+      margin-bottom:2px;
+      display:none;
+    }
+  
+    .sidenav .nologmenu{
+      margin: 5px 5px;
+      border:1px solid whitesmoke;
+      border-radius:10px;
+      padding: 1px;
+      color:rgb(16, 57, 134);
+      background:whitesmoke;
+      float:left;
+    }
+    
+    #trombinouclogo{
+		display:none;
+    }
+
+    .float{
+      width:auto;
+    }
+
+    .clear{
+      width:auto;
+    }
+
+    .alertbox{
+      width:auto;
+    }
+  
+  
+    .infobox{
+      width:auto;
+    }
+
+    form input[type=text],[type=password],[type=date] {
+      width:70%;
+      text-align:center;
+    }
+    
+    form textarea {
+      width:25%;
+      text-align:center;
+    }
+
+    form label{
+      text-align:center;
+    }
+
+    .publication {
+      clear:left;
+      width:90%;
+      /*border-top:0;
+      border-bottom:1.5px solid rgba(45, 86, 161);*/
+    }
+    .publication_profil{
+      clear:left;
+      width:90%;
+      /*border-top: 1.5px solid rgba(45, 86, 161);
+      border-bottom: 0;*/
+    }
+    .publication_profil img{
+     width: 30%;
+     }
+     
+     .full_publication span{
+     clear:left;
+     }
+     
+     footer {
+	width: 50%;
+	font-size:12px;
+  }
+  }
